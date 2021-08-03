@@ -16,4 +16,4 @@ for i in c.keys():
     count+=1
 if count==0:
   print("No Majority Elements")
-  
+
