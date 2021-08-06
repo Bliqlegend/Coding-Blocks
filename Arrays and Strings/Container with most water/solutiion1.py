@@ -1,6 +1,9 @@
 N = int(input())
 n = list(map(int, input().rstrip().split()))
 currentMax = 0
+
+# O(n^2) Time Complexity
+
 for i in range(len(n)):
   for j in range(i,len(n)):
     if i!=j:
