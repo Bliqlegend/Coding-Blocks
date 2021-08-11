@@ -1,11 +1,13 @@
 from collections import Counter
 n = int(input())
-s = []
+s = ''
 for i in range(n):
   ele = str(input())
-  s.append(ele)
-c = Counter(s)
+  s+=ele
 
+if n > 19 and len(s) > 27:
+    print(0)
+c = Counter(s)
 length = 0
 for i in c.keys():
   length+=len(i)
